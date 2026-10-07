@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    pipeline_dabs_sales:
+      name: dabs_sales
+      libraries:
+        - glob:
+            include: ../../resources/pipelines/dabs_sales/**
+      schema: default
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: dabs_mini
+      serverless: true
+      root_path: ../../resources/pipelines/dabs_sales
